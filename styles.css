@@ -18,14 +18,18 @@
   --fw-bold: 700;
 
   /* Spacings */
+  --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 2rem; /* 26px */
+
+  /* Gaps */
+  --gap-md: 1rem;
 
   /* Border radius */
   --border-radius-sm: 12px;
 
   /* Shadows */
-  --shadow-subtle: 0 0 10px rgba(0, 0, 0, 0.2);
+  --shadow-subtle: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 *,
@@ -44,8 +48,8 @@ body {
 
 /* Typography */
 .card-title {
-  font-weight: var(--fw-bold);
   font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
   line-height: 1.5;
   color: var(--very-dark-grayish-blue);
 
@@ -55,6 +59,14 @@ body {
   font-weight: var(--fw-medium);
   font-size: var(--fs-md);
   line-height: 1.6;
+  color: var(--desaturated-dark-blue);
+}
+.author-name {
+  font-weight: var(--fw-bold);
+  color: var(--very-dark-grayish-blue);
+  line-height: 1.6;
+}
+.published-date {
   color: var(--desaturated-dark-blue);
 }
 /* Layout */
@@ -76,16 +88,63 @@ body {
 .card-content {
   padding: var(--spacing-lg);
 }
-/* Images */
 .card-image {
   width: 100%;
-  height: 195px;
+  height: 15rem;
   background-image: url("./assets/images/drawers.jpg");
   background-size: cover;
   background-position-y: 20%;
   background-repeat: no-repeat;
 }
 
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 24rem;
+  padding: var(--spacing-lg);
+  background-color: var(--white);
+}
+.author-content {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-md);
+}
+
+.author-avatar {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+}
+
+/* Buttons */
+.share-button {
+  width: 2.7rem;
+  height: 2.7rem;
+
+  border: none;
+  color: var(--desaturated-dark-blue);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.share-button .share-icon {
+  width: 1.84rem;
+  height: 1.84rem;
+  transform: translate(5px, 5px);
+}
+.share-button:hover {
+  background-color: var(--desaturated-dark-blue);
+}
+.share-button:hover .share-icon {
+  color: var(--white);
+}
+/* Classes for JavaScript */
+.author.active {
+  background-color: var(--very-dark-grayish-blue);
+}
+.author.active .author-content {
+  opacity: 0;
+}
 /* Media queries */
 @media (min-width: 768px) {
   .card {
