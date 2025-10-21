@@ -9,18 +9,19 @@
 
   <title>Frontend Mentor | Article preview component</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/media-queries.css">
   <script src="./app.js" defer></script>
 </head>
 
 <body>
   <main>
     <div class="main-container">
-      <!-- 
+
       <article class="card">
         <div class="card-image"></div>
         <div class="card-content">
-          <div class="card-text">
+          <div class="card-info">
             <h1 class="card-title">
               Shift the overall look and feel by adding these wonderful
               touches to furniture in your home
@@ -31,60 +32,62 @@
               to help you make any room feel complete.
             </p>
           </div>
-      </article> -->
 
-      <!--    <article class="author" id="author">
-        <div class="author-content">
-          <img src="./assets/images/avatar-michelle.jpg" alt="" class="author-avatar">
-          <div class="author-details">
-            <p class="author-name">Michelle Appleton</p>
-            <time class="published-date" datetime="2020-06-28">28 Jun 2020</time>
-          </div>
+          <article class="author" id="author">
+            <div class="author-content">
+              <img src="./assets/images/avatar-michelle.jpg" alt="" class="author-avatar">
+              <div class="author-details">
+                <p class="author-name">Michelle Appleton</p>
+                <time class="published-date" datetime="2020-06-28">28 Jun 2020</time>
+              </div>
+            </div>
+
+            <nav class="nav">
+              <ul class="social-list">
+                <li>
+                  <a href="#" class="social-text">Share</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="social-icon">
+                      <use href="../assets/icons/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="social-icon">
+                      <use href="../assets/icons/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="social-icon">
+                      <use href="../assets/icons/icons.svg#icon-pinterest"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <button class="share-button" id="btnShare">
+              <svg class="share-icon">
+                <use href="../assets/icons/icons.svg#icon-share"></use>
+              </svg>
+            </button>
+          </article>
         </div>
-        <button class="share-button" id="btnShare">
-          <svg class="share-icon">
-            <use href="../assets/icons/icons.svg#icon-share"></use>
-          </svg>
-        </button>
-      </article> -->
-
-
-      <nav class="nav">
-        <ul class="social-list">
-          <li>
-            <a href="#" class="social-text">Share</a>
-          </li>
-          <li>
-            <a href="#">
-              <svg class="social-icon">
-                <use href="../assets/icons/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg class="social-icon">
-                <use href="../assets/icons/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg class="social-icon">
-                <use href="../assets/icons/icons.svg#icon-pinterest"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      </article>
     </div>
   </main>
 
-  <!-- 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
-    Coded by <a href="#">@amansgz</a>
-  </div> -->
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        rel="noopener noreferrer">Frontend Mentor</a>
+      | Coded by <a href="https://www.github.com/amansgz" target="_blank" rel="noopener noreferrer">@amansgz</a>
+    </div>
+  </footer>
 
 </body>
 
