@@ -75,12 +75,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 4.46rem);
+  min-height: 100vh;
   background-color: var(--light-grayish-blue);
 }
 
 .card {
-  width: 90%;
+  width: 95%;
   max-width: 24rem;
   background-color: var(--white);
   border-radius: var(--border-radius-sm);
@@ -183,7 +183,7 @@ body {
 }
 /* Footer with attribution */
 .footer {
-  height: 4.46rem;
+  padding: var(--spacing-sm);
   background-color: var(--light-grayish-blue);
 }
 .attribution {
