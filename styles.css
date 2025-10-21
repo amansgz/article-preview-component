@@ -138,6 +138,34 @@ body {
 .share-button:hover .share-icon {
   color: var(--white);
 }
+.nav {
+  width: 24rem;
+  padding: var(--spacing-lg);
+  background-color: var(--very-dark-grayish-blue);
+}
+.social-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.social-list li {
+  margin-inline-start: 1rem;
+}
+.social-list li a {
+  text-decoration: none;
+}
+.social-text {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--grayish-blue);
+}
+.social-icon {
+  width: 1.84rem;
+  height: 1.84rem;
+  color: var(--white);
+}
 /* Classes for JavaScript */
 .author.active {
   background-color: var(--very-dark-grayish-blue);
@@ -157,5 +185,25 @@ body {
   }
   .card-content {
     width: 60%;
+  }
+  .share-button {
+    position: relative;
+  }
+  .nav {
+    width: 18rem;
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+  }
+  .nav::after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid var(--very-dark-grayish-blue);
   }
 }
