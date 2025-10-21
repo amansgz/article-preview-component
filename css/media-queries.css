@@ -1,5 +1,5 @@
 /* Media queries */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .card {
     display: flex;
     width: 95%;
@@ -20,25 +20,25 @@
     width: 100%;
   }
   .author,
-  .nav {
+  .social-nav {
     border-bottom-left-radius: 0;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .card-info {
-    padding-bottom: 0;
+    padding-block-end: 0;
   }
   .author {
     position: relative;
   }
   /* Classes for JavaScript */
-  .author.active {
+  .author-show {
     background-color: var(--white);
   }
-  .author.active .author-content {
+  .author-show .author-content {
     display: flex;
   }
-  .author.active .nav {
+  .author-show .social-nav {
     position: absolute;
     inset-block-start: -60px;
     inset-inline-start: 65%;
@@ -48,10 +48,10 @@
     border-radius: var(--border-radius-sm);
     box-shadow: var(--shadow-subtle);
   }
-  .author.active .social-list {
+  .author-show .social-list {
     padding: var(--spacing-md);
   }
-  .author.active .nav::after {
+  .author-show .social-nav::after {
     content: "";
     position: absolute;
     inset-block-end: -14px;
