@@ -2,7 +2,7 @@
 @media (min-width: 48rem) {
   .card {
     display: flex;
-    width: 95%;
+    width: 100%;
     max-width: 56rem;
   }
   .card-image {
@@ -18,6 +18,8 @@
   }
   .author {
     width: 100%;
+    height: 6.53rem;
+    border-radius: 0 0 var(--border-radius-sm) 0;
   }
   .author,
   .social-nav {
@@ -41,7 +43,7 @@
   .author-show .social-nav {
     position: absolute;
     inset-block-start: -60px;
-    inset-inline-start: 65%;
+    inset-inline-start: 66%;
 
     width: 18rem;
 
